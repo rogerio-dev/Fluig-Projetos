@@ -1,0 +1,127 @@
+<html>
+
+<head>
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css" />
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+	<div class="fluig-style-guide">
+		<form name="form" role="form">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<h1>Cadastro de Novo Veiculo</h1>
+				</div>
+			</div>
+			<!---------------------------- SOLICITANTE ----------------------------------------------->
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Solicitante</h3>
+				</div>
+				<div class="panel-body">
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="marcaVeiculo">Marca Veiculo:</label>
+							<input type="text" class="form-control" name="marcaVeiculo" id="marcaVeiculo">
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="corVeiculo">Cor:</label>
+							<input type="text" class="form-control" name="corVeiculo" id="corVeiculo">
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="anoVeiculo">Ano:</label>
+							<input type="number" class="form-control" name="anoVeiculo" id="anoVeiculo">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="valorVeiculo">Valor:</label>
+							<input type="number" class="form-control" name="valorVeiculo" id="valorVeiculo">
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="form-group">
+							<label for="dataCompraVeiculo">Data Compra</label>
+							<div class="input-group">
+								<input class="form-control" type="date" id="dataCompraVeiculo" name="dataCompraVeiculo"
+									mask="00/00/0000">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="form-group">
+							<label for="zoom_estados">Estado</label>
+							<input type="zoom" class="form-control" id="zoom_estados" name="zoomEstados" data-zoom="{
+								'datasetId':'ds_estadosBrasil',
+								'displayKey':'ds_estadosBrasil',
+								'maximumSelectionLength':'1',
+								'placeholder':'UF',
+								'fields':[
+									{
+										'field':'estado',
+										'label':'Estado',
+										'standard':'true'
+									},
+									   {
+										'field':'sigla',
+										'label':'UF',
+										'standard':'true'
+									}
+								]
+							}">
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="form-group">
+							<label for="chassiVeiculo">Chassi</label>
+							<input class="form-control" type="text" id="chassiVeiculo" name="chassiVeiculo">
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="form-group">
+							<label for="renavanVeiculo">RENAVAN</label>
+							<input type="text" class="form-control" id="renavanVeiculo" name="renavanVeiculo">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--------------------------------------- Aprovação Diretoria ----------------------------------------------->
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Aprovação da Diretoria</h3>
+				</div>
+				<div class="panel-body">
+					<div class="col-md-6">
+						<div class="form-group">
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+	</div>
+	</div>
+
+	</div>
+	</div>
+	</div>
+	</form>
+	</div>
+</body>
+
+</html>
