@@ -50,26 +50,109 @@
 					</div>
 					<div class="col-md-2">
 						<div class="form-group">
-							<label for="">Data</label>
+							<label for="dataCompraVeiculo">Data Compra</label>
 							<div class="input-group">
-								<input class="form-control" type="text" id="" name="dataVeiculo" mask="00/00/0000">
-								<div class="input-group-addon"><span class="fluigicon fluigicon-calendar"></span></div>
+								<input class="form-control" type="date" id="dataCompraVeiculo" name="dataCompraVeiculo"
+									mask="00/00/0000">
 							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="form-group">
+							<label for="zoom_estados">Estado</label>
+							<input type="zoom" class="form-control" id="zoom_estados" name="zoomEstados" data-zoom="{
+								'datasetId':'ds_estadosBrasil',
+								'displayKey':'ds_estadosBrasil',
+								'maximumSelectionLength':'1',
+								'placeholder':'UF',
+								'fields':[
+									{
+										'field':'estado',
+										'label':'Estado',
+										'standard':'true'
+									},
+									   {
+										'field':'sigla',
+										'label':'UF',
+										'standard':'true'
+									}
+								]
+							}">
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="form-group">
+							<label for="chassiVeiculo">Chassi</label>
+							<input class="form-control" type="text" id="chassiVeiculo" name="chassiVeiculo">
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="form-group">
+							<label for="renavanVeiculo">RENAVAN</label>
+							<input type="text" class="form-control" id="renavanVeiculo" name="renavanVeiculo">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--------------------------------------- Aprovação Diretoria ----------------------------------------------->
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Aprovação da Diretoria</h3>
+				</div>
+				<div class="panel-body">
+					<div class="col-md-6">
+						<div class="form-group">
+							<h5>Aprovar:</h5>
+							<div class="custom-radio custom-radio-inline custom-radio-primary">
+								<input type="radio" name="decisaoDiretor" id="opAprovado" value="opAprovado">
+								<label for="opAprovado">Sim</label>
+								<input type="radio" name="decisaoDiretor" id="opNaoAprovado" value="opNaoAprovado">
+								<label for="opNaoAprovado">Não</label>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--------------------------------------- Panel Patrimônio ----------------------------------------------->
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Setor de Patrimônio</h3>
+				</div>
+				<div class="panel-body">
+					<div class="col-md-2">
+						<div class="form-group">
+							<label for="dataIncorporacao">Data Incorporação</label>
+							<input type="date" class="form-control" id="dataIncorporacao" name="dataIncorporacao">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="patrimonio">Patrimônio</label>
+							<input type="text" class="form-control" id="patrimonio" name="patrimonio">
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label for="obsPatrimonio">Observação</label>
+							<textarea class="form-control" name="obsPatrimonio" id="obsPatrimonio" rows="10"></textarea>
 						</div>
 					</div>
 				</div>
 			</div>
 
+
+
+
+
 	</div>
 	</div>
 
 	</div>
 	</div>
 	</div>
-	<!---------------------------- FIM PANEL SOLICITANTE ----------------------------------------------->
-
-
-
 	</form>
 	</div>
 </body>
