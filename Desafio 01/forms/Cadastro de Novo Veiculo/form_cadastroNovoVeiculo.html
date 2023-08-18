@@ -1,4 +1,4 @@
-<html>
+<html> //teste01
 
 <head>
 	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css" />
@@ -103,12 +103,45 @@
 				<div class="panel-body">
 					<div class="col-md-6">
 						<div class="form-group">
+							<h5>Aprovar:</h5>
+							<div class="custom-radio custom-radio-inline custom-radio-primary">
+								<input type="radio" name="decisaoDiretor" id="opAprovado" value="opAprovado">
+								<label for="opAprovado">Sim</label>
+								<input type="radio" name="decisaoDiretor" id="opNaoAprovado" value="opNaoAprovado">
+								<label for="opNaoAprovado">Não</label>
+							</div>
 
 						</div>
 					</div>
 				</div>
 			</div>
+			<!--------------------------------------- Panel Patrimônio ----------------------------------------------->
 
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Setor de Patrimônio</h3>
+				</div>
+				<div class="panel-body">
+					<div class="col-md-2">
+						<div class="form-group">
+							<label for="dataIncorporacao">Data Incorporação</label>
+							<input type="date" class="form-control" id="dataIncorporacao" name="dataIncorporacao">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="patrimonio">Patrimônio</label>
+							<input type="text" class="form-control" id="patrimonio" name="patrimonio">
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label for="obsPatrimonio">Observação</label>
+							<textarea class="form-control" name="obsPatrimonio" id="obsPatrimonio" rows="10"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
 
 
 
